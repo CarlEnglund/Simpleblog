@@ -1,0 +1,69 @@
+header
+{
+	font-family: "omnes-pro", sans-serif;
+}
+
+img
+{
+    width: 60px;
+    height: 60px;
+}
+
+textarea, input 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.pure-u-20-24
+{
+	padding-left: 10%;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary 
+{
+    color: white !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60) !important; /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.logout
+{
+    margin-top: 200%;
+}
+.post-avatar
+{
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+
+.l-box
+{
+    padding-left: 1em;
+}
+
+.border
+{
+    border-bottom: 1px solid #eee;
+}

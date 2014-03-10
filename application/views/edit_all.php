@@ -59,7 +59,7 @@
 						            <td>' . $data['rubrik'] . '</td>
 						            <td>' . $data['time'] . '</td>  
 						            <td><a href="retrieve_post/'. urlencode($data['pid']) . '"><button type="submit" class="pure-button pure-button-primary">Edit post</button></a><br>
-						            <td><a href="delete_post/'. urlencode($data['pid']) . '"><button type="submit" class="button-error pure-button">Delete post</button></a><br>   
+						            <td><a href="delete_post/'. urlencode($data['pid']) . '"><button type="submit" class="button-error pure-button" id="confirm">Delete post</button></a><br>   
 						        </tr>';
 						    }
 						     ?>
@@ -69,7 +69,8 @@
 			</div>
 		</div>
 	</div>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 <script src="<?php echo base_url('assets/js/ui.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/script.js'); ?>"></script>
 </body>
 </html>

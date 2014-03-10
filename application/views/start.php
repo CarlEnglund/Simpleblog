@@ -25,7 +25,7 @@
 					<li class="pure-menu"><a href="<?php echo site_url('start/edit_posts') ?>">Edit posts</a> </li>
 	            </ul>
 	            <ul>
-	            	<li class "pure-menu"><a href="#">Edit user</a></li>
+	            	<li class "pure-menu"><a href="<?php echo site_url('start/update_page') ?>">Edit user</a></li>
 	            	<li class="pure-menu"><a href="<?php echo site_url('admin/logout') ?>">Log out</a></li>
 	           </ul>
 	        </div>

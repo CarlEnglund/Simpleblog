@@ -36,6 +36,17 @@ class User_model extends CI_Model
     $this->db->where('username', $username);
     return $this->db->get('users')->result_array();
   }
+
+  public function update_user()
+  {
+     $username = $this->session->userdata('username');
+    $update_user = array(
+      'fname' =>  $this->input->post('fname'),
+      'lname' =>  $this->input->post('lname'));
+
+    $this->db->where('username', $username);
+    $this->db->update('users', $update_user);
+  }
 }
 
 ?>

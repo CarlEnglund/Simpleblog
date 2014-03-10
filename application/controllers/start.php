@@ -80,6 +80,14 @@ class Start extends CI_Controller {
 		redirect('start/edit_posts', 'location');
 	}
 
+	public function update_page()
+	{
+		$this->load->model('user_model');
+		$username = $this->session->userdata('username');
+		$data['userinfo'] = $this->user_model->get_user($username);
+		$this->load->view('edit_user', $data);
+	}
+
 	//Check if a user is logged in. also allows certain methods to be loaded anyways, such as the blogmethod.
 	public function is_logged_in()
 	{

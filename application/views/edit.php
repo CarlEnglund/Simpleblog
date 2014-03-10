@@ -52,7 +52,7 @@
 				   						<textarea name="Text" rows="10" cols="50" required value="">' . $edit['text'] . '</textarea>';
 				   					}
 				   				?>
-		   						<input type="Submit" value="Update" class="pure-button pure-button-primary">
+		   						<input type="Submit" value="Update" class="pure-button pure-button-primary" id="confirm">
 		   					</form>
 	   					</div>
 					</div>
@@ -61,6 +61,8 @@
 		</div>
 	</div>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 <script src="<?php echo base_url('assets/js/ui.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/script.js'); ?>"></script>
 </body>
 </html>

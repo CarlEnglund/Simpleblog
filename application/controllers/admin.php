@@ -43,5 +43,12 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('signup');
 	}
+
+	public function update($username)
+	{
+		$this->load->model('user_model');
+		$this->user_model->update_user($username);
+		redirect('start/update_page', 'location');
+	}
 	
 }

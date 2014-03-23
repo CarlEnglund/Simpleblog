@@ -66,4 +66,5 @@ textarea, input
 .border
 {
     border-bottom: 1px solid #eee;
+    vertical-align: bottom !important;
 }

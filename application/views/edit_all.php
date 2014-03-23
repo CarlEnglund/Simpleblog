@@ -64,6 +64,14 @@
 						    }
 						     ?>
 						 </thead>
+						
+					</div>
+					 <?php 
+						 	if(defined($message) && $message == true)
+								echo '<div class="alert alert-warning alert-dismissable">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Post updated!</strong>';
+						?>
 					</div>
 				</div>
 			</div>

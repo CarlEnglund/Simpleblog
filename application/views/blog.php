@@ -61,9 +61,9 @@
 				            echo "<h1>" . $data['rubrik'] . "</h1>";
 				            echo '<div class="pure-u-1-3 border">' .'Posted by ' . $userinfo[0]['fname'] . ' ' . $userinfo[0]['lname'] . '</div>';
 				            echo '<div class="pure-u-1-3 border">'. $data['time'] . '</div>';
-				            echo '<div class="pure-u-1-3"><img src="' . $picture . '" class="post-avatar "></div>';
+				            echo '<div class="pure-u-1-3 border"><img src="' . $picture . '" class="post-avatar "></div>';
 				            echo '<p>';
-				            echo '<pre class="text">'.  $data['text'] . '</pre>';
+				            echo '<p class="text">'.  $data['text'] . '</p>';
 				            echo "</p>";
 				            echo '<br>';
 				        	}

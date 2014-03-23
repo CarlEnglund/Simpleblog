@@ -14,9 +14,13 @@ class Blog_model extends CI_Model
 	//Adds a post to the database
 	public function add_post()
 	{
+		$text = $this->input->post('Text');
+		$text = nl2br($text);
+		$text = stripslashes($text);
+
        $data = array(
 	           'rubrik' => strip_tags($this->input->post('Rubrik')),
-	           'text' => strip_tags($this->input->post('Text')));  
+	           'text' => $text);  
 
        $this->db->insert('posts', $data);
 	}
@@ -24,7 +28,7 @@ class Blog_model extends CI_Model
 	//Load single posts
 	public function load_single_post($pid)
 	{
-		$this->db->select('rubrik, text');
+		$this->db->select('rubrik, text, pid');
 		$this->db->where('pid', $pid);
 
 		return $this->db->get('posts')->result_array();

@@ -42,7 +42,8 @@
 	   			<div class="pure-g-r">
 	   				<div class="pure-u-1-1">
 	   					<div class="l-box">
-		   					<form name="input" class="pure-form pure-form-stacked" action="<?php echo site_url('start/form') ?>" method="post">
+	   					<?php $data = $return[0]['pid']; ?>
+		   					<form name="input" class="pure-form pure-form-stacked" action="<?php echo site_url('start/update_post/'.$data) ?>" method="post">
 		   						<label>Heading</label>
 		   						<?php 
 		   							foreach($return as $edit)

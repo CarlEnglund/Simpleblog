@@ -57,19 +57,22 @@ class Start extends CI_Controller {
 	}
  
  	//Load all posts for the edit view
- 	public function edit_posts()
+ 	public function edit_posts($updated = '')
  	{
  		$this->load->model('blog_model');
  		$edit['return'] = $this->blog_model->load_posts();
+ 		$edit['message'] = $updated;
  		$this->load->view('edit_all', $edit);
  	}
 
  	//Updates a post in the database
 	public function update_post($pid)
 	{
+		
 		$this->load->model('blog_model');
 		$this->blog_model->edit_post($pid);
-		$this->blog();
+		$updated = 'true';
+		$this->edit_posts($updated);
 	}
 
 	//Deletes a post from the database
